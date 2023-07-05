@@ -33,7 +33,7 @@ class VideosList(Resource):
             return make_response(x, 201)
 
 
-class CursoDetail(Resource):
+class VideoDetail(Resource):
     def get(self, id):
         video = video_service.listar_videos_id(id)
         if video is None:
@@ -72,4 +72,4 @@ class CursoDetail(Resource):
 
 
 api.add_resource(VideosList, '/videos')
-api.add_resource(CursoDetail, '/videos/<int:id>')
+api.add_resource(VideoDetail, '/videos/<int:id>')
