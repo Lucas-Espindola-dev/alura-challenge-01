@@ -1,7 +1,7 @@
 DEBUG = True
 
-USERNAME = 'root'
-PASSWORD = 'Daymongol16%'
+USERNAME = ''
+PASSWORD = ''
 SERVER = 'localhost'
 DB = 'videos'
 
